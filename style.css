@@ -1,96 +1,192 @@
 body{
-    background: color #f4f4f4;
-    color:#555;
-    font-family:Arial, Helvetica, sans-serif;
+    background-color:#f4f4f4;
+    color:#555555;
+
+    font-family:Arial, Arial, Helvetica, sans-serif;
     font-size:16px;
+    font-weight:normal;
     line-height:1.6em;
     margin:0;
 
+
+}
+a{
+    text-decoration:none;
+    color:#000;
+}
+
+a:hover{
+    color:red;
+    
+}
+a:active{
+    color:green;
 }
 .container{
     width:80%;
-    margin: auto;
-    overflow: hidden;
+    margin:auto;
 }
 
-#main-header{
-    background-color:coral;
-    color:#fff;
+.clr{
+    clear:both;
+
+
 }
 
-#navbar{
+.box-1{
     background-color:#333;
     color:#fff;
+
+    border-right:5px red solid;
+    border-left:5px red solid;
+    border-top:5px red solid;
+    border-bottom:5px red solid;
+    border-width:3px;
+    border-bottom-width:10px;
+    border-top-style:dotted;
+
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-right:20px;
+    padding-left:20px;
+
+    margin-top:20px;
+
 }
 
-#navbar ul{
-    padding:0;
-    list-style: none;
+.box-1 h1{
+    font-family:tahoma;
+    font-weight:800;
+    font-style:italic;
+    text-decoration:underline;
+    text-transform:uppercase;
+    letter-spacing:0.2em;
+
+
+}
+.box-2{
+    border:3px dotted #ccc;
+    padding:20px;
+    margin:20px 0;
+
+
+
+
 }
 
-#navbar li{
-    display: inline;
+.categories{
+    border:1px #ccc solid;
+    padding:10px;
+    border-radius:15px;
+
 
 }
 
-#navbar a{
-    color:#fff;
-    text-decoration:none;
-    font-size:18px;
-    padding-right:15px;
-}
-
-#showcase{
-    background-image:url('../images/showcase.jpg');
-    background-position:center right;
-    min-height:300px;
-    margin-bottom: 30px;
+.categories h2{
     text-align:center;
+}
+
+.categories ul{
+    padding:0;
+    padding-left:20px;
+    list-style:square;
 
 }
 
-#showcase h1{
+.categories li{
+    padding-bottom:6px;
+    border-bottom:dotted 1px #333;
+    list-style-image:url('../images/check.png');
+
+}
+.my-form{
+    padding:20px;
+
+}
+.my-form .form-group{
+    padding-bottom:15px;
+}
+
+.my-form label{
+    display:block;
+}
+
+.my-form input[type="text"], .my-form textarea{
+    padding:8px;
+    width:100%;
+
+}
+.my-form input[type="submit"]{
+    background-color:#333;
     color:#fff;
-    font-size:50px;
-    line-height:1.6em;
-    padding-top:30px;
+    padding:10px 15px;
+    border:none;
+
 
 }
+.block{
+    float:left;
+    width:33.3%;
+    border:1px solid #ccc;
+    padding:10px;
+    box-sizing:border-box;
 
-#main{
+}
+#main-block{
     float:left;
     width:70%;
-    padding:0 30px;
+    padding:15;
     box-sizing:border-box;
-}
+    
 
+
+}
 #sidebar{
     float:right;
     width:30%;
-    background:#333;
+    background-color:#333;
     color:#fff;
-    padding:10px;
+    padding:15;
     box-sizing:border-box;
-}
-
-#main-footer{
-    background:#333;
-    color:#fff;
-    text-align:center;
-    padding:20px;
-    margin-top:40px;
-}
-
-@media(max-width:600px){
-    #main{
-        width:100%
-        float:none
-    }
-    #sidebar{
-        width:100%
-        float:none
-    }
     
+}
+.p-box{
+    width:800px;
+    height: 500px;;
+    border:1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    background-image:url('../images/bgimage.jpg');
+    background-repeat:no repeat;
+    background-position:100px 200px;
+    background-position:center center;
 
+}
+.p-box h1{
+    position:absolute;
+    top:100px;
+    left:200px;
+}
+.p-box h2{
+    position:absolute;
+    bottom:40px;
+    right:100px;
+}
+
+.fix-me{
+    position:fixed;
+    top:400px;
+}
+
+.my-list li:first-child{
+    background:red;
+
+}
+.my-list li:last-child{
+    background-color:blue;
+
+}
+.my-list li:nth-child(5){
+    background-color:yellow;
 
 }
